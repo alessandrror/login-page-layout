@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+// :root {
+    $purple-light: #a100f7;
+    $blue-dark: #00297c;
+    $purple-dark: #760081;
+    $blue-light: #007bff;
+    $gray-form: #f7f8fa;
+    $gray-text: #bdbcc1;
+    $gray-input: #495057;
+    $rojo-error: #ff5959;
+    $verde-exito: #1cce28;
+    $comfortaa-font: 'Comfortaa', cursive;
+    $segoe-ui-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+// }
+
+// ADDINGS
+
+.card {
+    padding: 2em 3em;
+    margin-top: 2em;
+    width: clamp(23.4375rem, 46%, 32.5rem);
+}
+
+.container {
+    max-width: 1140px;
+}
+
+// TAGS
+
+body {
+    min-width: 23.4375rem;
+}
+
+header {
+    height: 8em;
+}
+
+main {
+    width: clamp(23.4375rem, 45%, 74.5rem);
+}
+
+// LOGO
+
+.header-logo {
+    width: 16em;
+    cursor: pointer;
+}
+
+// FONTS 
+
+.segoe-f {
+    font-family: $segoe-ui-font;
+}
+
+.f {
+    &-7 {
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+    &-6 {
+        font-weight: 650;
+        font-size: 0.8rem;
+    }
+    &-5 {
+        font-weight: 500;
+    }
+    &-4 {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+// BACKGROUNDS
+
+.bg {
+    &-gradient {
+        background: linear-gradient($purple-light, $purple-dark);
+    }
+    &-d-blue {
+        background-color: $blue-dark;
+    }
+    &-l-blue {
+        background-color: $blue-light;
+    }
+    &-d-purple {
+        background-color: $purple-dark;
+    }
+    &-l-purple {
+        background-color: $purple-light;
+        transition: 250ms ease-in-out;
+        &:hover {
+            background-color: $blue-light;
+        }
+    }
+    &-d-gray {
+        background-color: $gray-input;
+    }
+    &-l-gray {
+        background-color: $gray-text;
+    }
+    &-d-white {
+        background-color: $gray-form;
+    }
+}
+
+// TEXT COLORS
+
+.clr {
+    &-l-gray {
+        color: $gray-text;
+        transition: 250ms ease-in-out;
+        &:hover {
+            color: $gray-input;
+        }
+    }
+    &-d-purple {
+        color: $purple-dark;
+        transition: 250ms ease-in-out;
+        &:hover {
+            color: $blue-dark;
+        }
+    }
+    &-l-purple {
+        color: $purple-light;
+        transition: 250ms ease-in-out;
+        &:hover {
+            color: $blue-light;
+        }
+    }
+    &-white {
+        color: #ffffff;
+    }
+}
+
+// ANCHORS
+
+.link {
+    &-forgot {
+        color: $purple-light;
+        font-size: 0.8rem;
+        transition: 250ms ease-in-out;
+        
+        &:focus {
+            color: $blue-light;
+            transform: scale(1.1);
+            outline: none;
+        }
+    
+        &:hover {
+            color: $blue-light;
+            transform: scale(1.1);
+            outline: none;
+        }
+    }
+    &-github {
+        transition: 250ms ease-in-out;
+        color: $purple-light;
+        text-decoration: none;
+        
+        &:focus {
+            transform: scale(1.1);
+            outline: none;
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+            outline: none;
+        }
+    }
+}
+
+// BUTTONS
+
+.btn-login {
+    color: $gray-form;
+    background-color: $purple-light;
+    transition: 250ms ease-in-out;
+
+    &:hover {
+            color: $gray-form;
+            background-color: $blue-light;
+    }
+
+    &:active {
+        color: $gray-form;
+    }
+}
+
+// SHADOWS
+
+.shadow-card {
+    box-shadow: 0 0 0.3rem 0 $gray-text;
+}
+
+// INPUTS
+
+.input-error {
+    border-color: $rojo-error!important;
+}
+
+.input-valid {
+    border-color: $verde-exito!important;
+}
+
+// .input-entry {
+//     // background-color: transparent;
+
+//     &:focus {
+//         border: none;
+//         outline: none;
+//     }
+// }
+
+// .input-btn {
+//     cursor: pointer;
+// }
